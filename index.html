@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Mesa Login Interface</title>
+</head>
+<body>
+	<h1>Black Mesa Login Interface</h1>
+		<table border="1" style="border-collapse: collapse;">
+			<caption>Manual</caption>
+			<tr>
+				<td>get</td>
+				<td>optimal for search queries: can fetch a link to search results and sent it somewhere</td>
+			</tr>
+			<tr>
+				<td>post</td>
+				<td>optimal for sending a lot of data when the user does not need the link to the result of processing this data (e.g. editing user profile)</td>
+			</tr>
+		</table>
+		<br> 
+		<form action="https://google.com/search?q=Black+Mesa" method="get">
+			<label>Search for Black Mesa via Google <input type="text" name="search" id="searh-black-mesa" value="What is black mesa?"></label>
+		</form>
+		<br>
+		<form action="https://devishnya.com" method="post">
+			<label for="username-field">Username</label>
+			<input type="text" name="login" id="username-field">
+		<br>
+		<br>
+			<label for="password-field">Password</label>
+			<input type="password" name="password" id="password-field">
+		<br>
+      	<br>
+      		<input type="checkbox" name="remember" id="remember-user" checked>
+      		<label for "remember-user">Remember user</label>
+      	<br>
+      	<br>
+      		<input type="submit" name="login">
+      		<textarea name="comment" id="comment-field" rows="10">Write a comment</textarea>
+      	<br>
+      		<input type="radio" name="question-one" value="combine" checked>      		      		     <input type="radio" name="question-one" value="rebels">
+      		<p>www</p>
+      		<select name="allegiance">
+      			<option value="combine">Combine</option>
+      			<option value="rebels">Rebels</option>
+			</select>
+			<select name="weapons" multiple="7">
+      			<option value="crowbar">crowbar</option>
+      			<option value="glock">glock</option>
+			</select>
+		</form>
+
+
+
+</body>
+</html>
